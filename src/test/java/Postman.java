@@ -17,7 +17,7 @@ public class Postman {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("info"))
+                .body("data", equalTo("info post"))
         ;
     }
 
@@ -31,7 +31,7 @@ public class Postman {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("что то"))
+                .body("data", equalTo("информация"))
         ;
     }
 }
